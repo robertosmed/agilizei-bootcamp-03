@@ -6,3 +6,4 @@ cypress/screenshots
 
 # outros
 .DS_Store
+debug.log
