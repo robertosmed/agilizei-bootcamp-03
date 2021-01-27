@@ -3,7 +3,7 @@ node_modules
 #cypress
 cypress/videos
 cypress/screenshots
+cypress/reports
 
 # outros
 .DS_Store
-debug.log
