@@ -1,0 +1,19 @@
+{
+  "name": "agilizei-bootcamp03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:electron": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome --headless",
+    "cy:run:firefox": "cypress run --browser firefox --headless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "5.6.0",
+    "faker": "^5.1.0"
+  },
+  "dependencies": {}
+}
