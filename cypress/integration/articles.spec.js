@@ -23,8 +23,3 @@ context('Artigos', () => {
     });
 });
 
- //AAA --> Arrange Act Assert
-    //-> Prepararação Ação Verificação/validação
-//hooks-->momentos antes / depois dos testes
-//before / beforeEach
-//after / AfterEach

@@ -1,14 +1,18 @@
 /// <reference types = "cypress" />
 
 import login from '../support/pages/login'
+import Routes from '../support/routes'
 
 context('Login', () => {
-    it('Realizar login com sucesso', () => {
 
+    it('Realizar login com sucesso', () => {
+        //Ação
         login.acessarLogin();
         login.preencherFormulario();
         login.submeterFormulario();
-        //verficação
+
+        //verificacao
+        login.verifcarSeOLoginTeveAcessoComSucesso()
 
     });
 });
