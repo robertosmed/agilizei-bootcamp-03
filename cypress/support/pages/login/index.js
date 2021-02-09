@@ -23,17 +23,9 @@ class Login{
 
     verifcarSeOLoginTeveAcessoComSucesso(){
         // templates string
-        cy.wait(`@${Routes.nomeDasRotas.postLogin}`).then((postLoginResponse) => {
+        cy.wait(`@${Routes.nomeDasRotas.postUserLogin}`).then((postLoginResponse) => {
             expect(postLoginResponse.status).to.eq(200)
         })
-   
-        cy.wait(`@${Routes.nomeDasRotas.getTags}`).then((getTags) => {
-           expect(getTags.status).to.eq(200)
-       })
-
-       cy.wait(`@${Routes.nomeDasRotas.getFeed}`).then((getFeed) => {
-        expect(getFeed.status).to.eq(200)
-    })
 
     }
 

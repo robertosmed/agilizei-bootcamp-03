@@ -26,16 +26,12 @@ class Cadastrar{
 
     verificarSeOCadastroFoiRealizadoComSucesso(){
         //templetes string
-        cy.wait(`@${routes.nomeDasRotas.postUsers}`).then((postUsersResponse) => {
-            expect(postUsersResponse.status).to.eq(200)
+        cy.wait(`@${routes.nomeDasRotas.postListUsers}`).then((postListUsersResponse) => {
+            expect(postListUsersResponse.status).to.eq(200)
         })
 
         cy.wait(`@${routes.nomeDasRotas.getTags}`).then((getTags) => {
             expect(getTags.status).to.eq(200)
-        })
-
-        cy.wait(`@${routes.nomeDasRotas.getFeed}`).then((getFeed) => {
-            expect(getFeed.status).to.eq(200)
         })
     }
 }

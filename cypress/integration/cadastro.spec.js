@@ -4,8 +4,10 @@ import cadastrar from '../support/pages/cadastrar'
 
 context('Cadastro', () => {
     it('Cadastrar um novo usuario', () => {
-        //Ação
+        //Preparaçao
         cadastrar.acessarPaginaDoCadastroDeFormulario()
+
+        //Ação
         cadastrar.preencherCadastroDeFormulario()
         cadastrar.submeterCadastroDeFormulario()
     

@@ -42,7 +42,8 @@ Cypress.Commands.add('backgroundLogin', () => {
 import Routes from './routes'
 
 before(() => {
-    Routes.initArticles()
-    Routes.initLogin()
-    Routes.initCadastrar()
+    Routes.initArticles();
+    Routes.initCadastrar();
+    Routes.initLogin();
+    
 });

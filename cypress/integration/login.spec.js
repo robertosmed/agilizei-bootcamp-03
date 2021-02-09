@@ -6,8 +6,10 @@ import Routes from '../support/routes'
 context('Login', () => {
 
     it('Realizar login com sucesso', () => {
-        //Ação
+        //Preparação
         login.acessarLogin();
+
+        //Ação
         login.preencherFormulario();
         login.submeterFormulario();
 
